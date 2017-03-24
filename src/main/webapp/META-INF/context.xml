@@ -1,0 +1,9 @@
+<Context reloadable="true">
+    <Resources>
+        <PostResources className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/data" base="${foo}" />
+        <PostResources className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/images" base="${foo}/images" />
+    </Resources>
+    <Parameter name="param1" value="blub"/>
+    <Environment name="de.sisao.simpleservlet.bar" value="bar" type="java.lang.String" override="true"/>
+    <Environment name="de.sisao.simpleservlet.foo" value="${foo}" type="java.lang.String" override="true"/>
+</Context>
